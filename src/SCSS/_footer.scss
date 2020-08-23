@@ -1,0 +1,18 @@
+footer {
+    position: sticky;
+    bottom: 0;
+    div {
+        text-align: center;
+        font-size: 14px;
+        word-spacing: 0.1em;
+        width: 100vw;
+        padding: 16px;
+        color: $light-cream-color;
+        background: $green-color;
+    }
+
+    span {
+        background: transparent;
+        color: red;
+    }
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import './SCSS/config';
+@import './SCSS/searchBar';
+@import './SCSS/headerTitle';
+@import './SCSS/tableItem';
+@import './SCSS/footer';
+@import './SCSS/modalBody';
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  background: $light-cream-color;
+  min-height: 100%;
+  overflow: hidden;
+  h1 {
+    width: 40%;
+    padding: 2em 0;
+    margin: auto;
+    text-align: center;
+    color: $green-color;
+  } 
+}

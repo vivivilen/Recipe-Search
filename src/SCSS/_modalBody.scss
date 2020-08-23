@@ -1,0 +1,37 @@
+.body-modal {
+    h3 {
+        text-align: center;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 5px;
+            background: $green-color;
+            width: 200px;
+            margin: auto;
+            margin-top: 1em;
+        }
+    }
+    .info-modal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        #title-info-ingredients {
+            display: inline;
+            background: $green-color;
+            padding: 8px 24px;
+            color: $light-cream-color;
+            border-radius: 30px;
+            word-spacing: 1em;
+        }
+    }
+
+    ul {
+        padding: 0 20px;
+        li {
+            list-style: square;
+            line-height: 1.5em;
+        }
+    }
+}

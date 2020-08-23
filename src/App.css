@@ -1,38 +1,215 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+.spinner-container {
+  width: 100%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spinner-container .spinner {
+  color: #093B31;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4em;
+}
+
+form .container-input {
+  width: 35%;
+  margin-right: 10px;
+}
+
+form .container-input #input-search {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #093B31;
+  width: 100%;
+}
+
+form .container-input ::-webkit-input-placeholder {
+  color: #979494;
+}
+
+form .container-input :-ms-input-placeholder {
+  color: #979494;
+}
+
+form .container-input ::-ms-input-placeholder {
+  color: #979494;
+}
+
+form .container-input ::placeholder {
+  color: #979494;
+}
+
+form .container-input :focus {
+  outline: none;
+}
+
+form .container-btn #btn-search {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #093B31;
+  color: #F3ECE8;
+  cursor: pointer;
+}
+
+.not-found-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.not-found-container img {
+  width: 250px;
+  height: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+table {
+  overflow: hidden;
+  margin-top: 2em;
+  width: 100%;
+  padding: 8px 16px;
+}
+
+table th {
+  border-left: 1px solid #093B31;
+  background: #093B31;
+  color: #F3ECE8;
+  font-weight: 500;
+  text-align: left;
+  padding: 8px 16px;
+}
+
+table :first-child {
+  border: none;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background: #cfd0b8;
+}
+
+tbody tr td {
+  padding: 8px 16px;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 700;
+}
+
+tbody tr img {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+footer div {
+  text-align: center;
+  font-size: 14px;
+  word-spacing: 0.1em;
+  width: 100vw;
+  padding: 16px;
+  color: #F3ECE8;
+  background: #093B31;
+}
+
+footer span {
+  background: transparent;
+  color: red;
+}
+
+.body-modal h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body-modal h3::after {
+  content: '';
+  display: block;
+  height: 5px;
+  background: #093B31;
+  width: 200px;
+  margin: auto;
+  margin-top: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body-modal .info-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.body-modal .info-modal #title-info-ingredients {
+  display: inline;
+  background: #093B31;
+  padding: 8px 24px;
+  color: #F3ECE8;
+  border-radius: 30px;
+  word-spacing: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body-modal ul {
+  padding: 0 20px;
 }
+
+.body-modal ul li {
+  list-style: square;
+  line-height: 1.5em;
+}
+
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  background: #F3ECE8;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.App h1 {
+  width: 40%;
+  padding: 2em 0;
+  margin: auto;
+  text-align: center;
+  color: #093B31;
+}
+/*# sourceMappingURL=App.css.map */
