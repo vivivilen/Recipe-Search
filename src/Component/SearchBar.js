@@ -30,6 +30,9 @@ export const SearchBar = () => {
     }
 
     return (
+        console.log('query: ', query),
+        console.log('food: ', food.length),
+
         isLoading ? <div className="spinner-container"><CircularProgress className="spinner" /></div> :
             <div>
                 <form onSubmit={getSearch}>
@@ -41,11 +44,11 @@ export const SearchBar = () => {
                         <button id="btn-search">Search</button>
                     </div>
                 </form>
-                {query === '' ? 
-                <div className="not-found-container">
-                    <img src={noDataImg} alt="not-found"/>
-                    <h3>Recipe not found</h3>
-                </div> :
+                {(query === '' || food.length === 0) ?
+                    <div className="not-found-container">
+                        <img src={noDataImg} alt="not-found" />
+                        <h3>Recipe not found</h3>
+                    </div> :
                     <HeaderTitle hits={food} />}
             </div>
     )
